@@ -25,7 +25,7 @@
   "data-folder": "../../../Data/",
 
   // debugging configuration - options for debugging-method LocalCmdLine, VisualStudio, PTVSD, PyCharm
-    "debugging": true,
+    "debugging": false,
     "debugging-method": "PTVSD",
 
   // handlers

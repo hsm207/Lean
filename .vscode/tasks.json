@@ -134,6 +134,20 @@
             "options": {
                 "cwd": "${workspaceFolder}/Launcher/bin/Debug/"
             }
+        },
+
+        {
+            "label": "Run Algorithm",
+            "type": "shell",
+            "command": "mono",
+            "args" : [
+                "QuantConnect.Lean.Launcher.exe",
+                "--config",
+                "${workspaceFolder}/Launcher/config.json"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/Launcher/bin/Debug/",
+            }
         }
     ]
 }

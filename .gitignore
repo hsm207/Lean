@@ -277,3 +277,5 @@ Research/Notebooks
 Results/
 
 */.ipynb_checkpoints/*
+quantconnect.egg-INFO
+PythonToolBox/dist

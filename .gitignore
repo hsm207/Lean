@@ -279,3 +279,4 @@ Results/
 */.ipynb_checkpoints/*
 quantconnect.egg-INFO
 PythonToolBox/dist
+!run_research.sh

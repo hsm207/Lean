@@ -279,3 +279,4 @@ Research/Notebooks
 Results/
 PythonToolBox/dist
 PythonToolBox/quantconnect.egg-info
+!run_research.sh

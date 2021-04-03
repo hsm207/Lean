@@ -150,6 +150,24 @@
                 "reveal": "silent"
             },
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build - silent",
+            "type": "shell",
+            "command": "time",
+            "args": [
+                "msbuild",
+                "/p:Configuration=Debug",
+                "/p:DebugType=portable",
+                "/t:build",
+                "/p:WarningLevel=0",
+                "/v:quiet"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
         }
     ]
 }

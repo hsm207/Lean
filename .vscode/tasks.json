@@ -168,6 +168,35 @@
                 "reveal": "silent"
             },
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Run Research",
+            "type": "process",
+            "command": "${workspaceFolder}/run_research.sh",
+            "isBackground": true,
+            "args": [
+                "DATA_DIR=${workspaceFolder}/Data",
+                "NOTEBOOK_DIR=${workspaceFolder}/Research/Notebooks",
+                "QC_API_USER_ID=0",
+                "QC_API_TOKEN=abc123"
+            ],
+            "problemMatcher": [
+                {
+                    "pattern": [
+                        {
+                            "regexp": ".",
+                            "file": 1,
+                            "location": 2,
+                            "message": 3
+                        }
+                    ],
+                    "background": {
+                        "activeOnStart": true,
+                        "beginsPattern": ".",
+                        "endsPattern": ".",
+                    }
+                }
+            ]
         }
     ]
 }

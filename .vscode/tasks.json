@@ -12,7 +12,7 @@
             "args": [
                 "/p:Configuration=Debug",
                 "/p:DebugType=portable",
-                "/t:build",
+                "/t:build"
             ],
             "group": "build",
             "presentation": {
@@ -27,7 +27,7 @@
             "args": [
                 "/p:Configuration=Debug",
                 "/p:DebugType=portable",
-                "/t:rebuild",
+                "/t:rebuild"
             ],
             "group": "build",
             "presentation": {
@@ -40,7 +40,7 @@
             "type": "shell",
             "command": "msbuild",
             "args": [
-                "/t:clean",
+                "/t:clean"
             ],
             "group": "build",
             "presentation": {
@@ -70,7 +70,7 @@
             "type": "shell",
             "isBackground": true,
             "windows": {
-                "command": "${workspaceFolder}/run_docker.bat",
+                "command": "${workspaceFolder}/run_docker.bat"
             },
             "linux": {
                 "command": "${workspaceFolder}/run_docker.sh"
@@ -100,7 +100,7 @@
                     "background": {
                         "activeOnStart": true,
                         "beginsPattern": ".",
-                        "endsPattern": ".",
+                        "endsPattern": "."
                     }
                 }
             ]
@@ -115,9 +115,9 @@
                 "focus": false,
                 "panel": "shared",
                 "showReuseMessage": false,
-                "clear": true,
+                "clear": true
             },
-            "linux":{
+            "linux": {
                 "command": "sudo docker stop LeanEngine"
             }
         },
@@ -125,7 +125,7 @@
             "label": "Run Application",
             "type": "process",
             "command": "QuantConnect.Lean.Launcher.exe",
-            "args" : [
+            "args": [
                 "--data-folder",
                 "${workspaceFolder}/Data",
                 "--config",
@@ -193,7 +193,7 @@
                     "background": {
                         "activeOnStart": true,
                         "beginsPattern": ".",
-                        "endsPattern": ".",
+                        "endsPattern": "."
                     }
                 }
             ]
@@ -208,8 +208,9 @@
                 "${workspaceFolder}/Launcher/config.json"
             ],
             "options": {
-                "cwd": "${workspaceFolder}/Launcher/bin/Debug/",
-            }
+                "cwd": "${workspaceFolder}/Launcher/bin/Debug/"
+            },
+            "problemMatcher": []
         }
     ]
 }
